@@ -1,0 +1,55 @@
+{
+    "intents": [ 
+    {
+        "tag": "greeting",
+        "patterns": [
+            "Hi",
+            "Hey",
+            "How are you",
+            "Is anyone there?",
+            "Hello",
+            "Good day"
+        ],
+        "responses": [ 
+            "What's good homie",
+            "Good day brotato chip",
+            "What's popping, what can I do for ya?",
+            "How can I help you out bromie?"
+        ]
+    },
+    {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbyte"],
+        "responses": [ 
+            "See you around bro",
+            "I'll catch you on the flip fr fr",
+            "You smell good man, hate to see you go"
+        ]
+    },
+    {
+        "tag": "thanks",
+        "patterns": ["Thank you, I appreciate it, you're the best"],
+        "responses": [
+            "It ain't nothing yo",
+            "You got it",
+            "You already know how it be"
+        ]
+    },
+    {
+        "tag": "weird",
+        "patterns": [
+            "You're acting weird",
+            "You're being strange",
+            "Why did you say that?",
+            "What's going on with you"
+        ],
+        "responses": [ 
+            "Aye man, that milk got me acting up",
+            "I been queezy queezy you feel me",
+            "I gotta hit the bathroom, I'll be back",
+            "Nah that's all you homie",
+            "I just don't know how to handle my apple juice"
+        ]
+    }
+    ]
+}
