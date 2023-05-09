@@ -28,9 +28,6 @@ all_words =[stem(w) for w in all_words if w not in ignore_words]
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))
 
-print(all_words)
-print(tags)
-
 x_train = []
 y_train = []
 
