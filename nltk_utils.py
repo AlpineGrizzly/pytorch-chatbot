@@ -12,12 +12,22 @@ def stem(word):
     return stemmer.stem(word.lower())
 
 def bag_of_words(tokenized_sentence, all_words):
-    tokenized_sentence = [stem(w) for w in tokenized_sentence]
+    """
+    bag_of_words Create a bag of words from a tokenized sentence
+    :tokenized_sentence: input for our bag of words function
     
-    bag= np.zeros(len(all_words), dtype=np.float32)
+    :all_words: All words that are trained into our model
+
+    return: Return the bag of words
+    """
+    tokenized_sentence = [stem(w) for w in tokenized_sentence] # Stem all the token words
+    
+    bag = np.zeros(len(all_words), dtype=np.float32) # initialize our bag of words
+
+    # Check for the existence of a token word in our word corpus
     for idx, w, in enumerate(all_words):
-        if w in tokenized_sentence:
-            bag[idx] = 1
+        if w in tokenized_sentence: 
+            bag[idx] = 1 # 
 
     return bag
     
