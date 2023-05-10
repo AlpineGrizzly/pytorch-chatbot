@@ -73,8 +73,8 @@ def main():
     dataset = ChatDataset()
     train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True, num_workers=2)
     
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    model = NeuralNet(input_size, hidden_size, output_size).to(device)
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu') # Leveraging the GPU if available
+    model = NeuralNet(input_size, hidden_size, output_size).to(device)    # Create our model from the neural net
     
     # Loss and optimizer
     criterion = nn.CrossEntropyLoss()
@@ -89,9 +89,9 @@ def main():
             outputs = model(words)
             loss = criterion(outputs, labels)
     
-            # Backward and optimizer step
+            # Backpropagation and optimizer step 
             optimizer.zero_grad() # Gradient
-            loss.backward()
+            loss.backward() #retain_graph=True can be used to save information
             optimizer.step()
         
         if (epoch + 1) % 50 == 0:
