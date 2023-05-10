@@ -7,3 +7,9 @@
 ### Experimental
 - [] More epochs of training once threaded
 - [] allow bot to learn patterns while chatting and save in json
+- [] Allow for decision tree, where if the bot doesn't know the response to a question or sentence, search it htrough google or something
+     and respond back, learn from this and add to the json file or create another json file based on this session.
+
+### Quality of life
+- [] Flags for specifiying intents.json/training data file + data.pth/output training data file
+- [] Checks for if data.pth exist or not and query if you would like to train if it doesn't already, take in json as input if so

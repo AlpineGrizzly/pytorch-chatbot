@@ -16,3 +16,5 @@ Once we have trained the model for the chatbot, we can now begin chatting with t
 ```
 python3 chat.py
 ``` 
+## Cool docs
+Neural Networks: https://towardsdatascience.com/neural-networks-forward-pass-and-backpropagation-be3b75a1cfcc
