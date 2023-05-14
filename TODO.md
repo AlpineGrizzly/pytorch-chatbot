@@ -8,7 +8,7 @@
 - [] More epochs of training once threaded
 - [] allow bot to learn patterns while chatting and save in json
 - [] Allow for decision tree, where if the bot doesn't know the response to a question or sentence, search it htrough google or something
-     and respond back, learn from this and add to the json file or create another json file based on this session.
+     and respond back, learn from this and add to the json file or create another json file based on this session. Can you explain that to me kind of thing and it will write it to the json file the information it is given.
 
 ### Quality of life
 - [] Flags for specifiying intents.json/training data file + data.pth/output training data file
